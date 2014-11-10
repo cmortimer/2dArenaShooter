@@ -2,10 +2,13 @@
 using System.Collections;
 
 public class CharacterController2d : MonoBehaviour {
-	int speed = 5;
+	public GameObject cursor;
+	public GameObject bullet;
+	public int speed = 5;
+	public int cursorSpeed = 50;
 	// Use this for initialization
 	void Start () {
-	
+		cursor.transform.position = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -15,22 +18,52 @@ public class CharacterController2d : MonoBehaviour {
 	
 	void getInput(){
 		Vector2 newPos = transform.position;
-		Quaternion newRot = transform.rotation;
-		if(Input.GetKey("w")){
+		Vector2 cursorPos = cursor.transform.position;
+
+		//Movement
+		if(Input.GetAxis("pad1LAnalogY") > 0){
 			newPos.y += speed * Time.deltaTime;
 		}
 		
-		else if(Input.GetKey("s")){
+		else if(Input.GetAxis("pad1LAnalogY") < 0){
 			newPos.y -= speed * Time.deltaTime;
 		}
 		
-		if(Input.GetKey("a")){
+		if(Input.GetAxis("pad1LAnalogX") < 0){
 			newPos.x -= speed * Time.deltaTime;
 		}
 		
-		else if(Input.GetKey("d")){
+		else if(Input.GetAxis("pad1LAnalogX") > 0){
 			newPos.x += speed * Time.deltaTime;
 		}
+
+		//Cursor Position
+		if(Input.GetAxis("pad1RAnalogY") > 0){
+			cursorPos.y += cursorSpeed * Input.GetAxis("pad1RAnalogY") * Time.deltaTime;
+		}
+		
+		else if(Input.GetAxis("pad1RAnalogY") < 0){
+			cursorPos.y += cursorSpeed * Input.GetAxis("pad1RAnalogY") * Time.deltaTime;
+		}
+		
+		if(Input.GetAxis("pad1RAnalogX") < 0){
+			cursorPos.x += cursorSpeed * Input.GetAxis("pad1RAnalogX") * Time.deltaTime;
+		}
+		
+		else if(Input.GetAxis("pad1RAnalogX") > 0){
+			cursorPos.x += cursorSpeed * Input.GetAxis("pad1RAnalogX") * Time.deltaTime;
+		}
+
+		//Teleport
+		if(Input.GetButtonDown("pad1L")){
+			newPos = cursorPos;
+		}
+
+
+
 		transform.position = newPos;
+		cursor.transform.position = cursorPos;
 	}
+
+
 }
