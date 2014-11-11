@@ -99,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 661772004}
   m_GameObject: {fileID: 156698278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.123328924, y: -.0308103245, z: 0}
+  m_LocalPosition: {x: 7.00525379, y: 4.12299347, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111410130}
@@ -404,12 +404,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 571440946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 352b5f613ebec954aa2905c6287f0e45, type: 3}
+  m_Script: {fileID: 11500000, guid: 85e12ce494885534084b847611121f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 156698278}
   bullet: {fileID: 737361075}
-  speed: 5
+  speed: 6
   cursorSpeed: 10
 --- !u!61 &571440948
 BoxCollider2D:
@@ -469,7 +469,7 @@ Transform:
   m_PrefabInternal: {fileID: 661772004}
   m_GameObject: {fileID: 571440946}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.43918681, y: 1.14441359, z: 0}
+  m_LocalPosition: {x: 7.57012939, y: 4.57266235, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2111410130}
@@ -528,6 +528,22 @@ Prefab:
     - target: {fileID: 400006, guid: dda5bd6044d5c9c4bb8eb3c903422231, type: 2}
       propertyPath: m_LocalPosition.y
       value: .302779108
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: dda5bd6044d5c9c4bb8eb3c903422231, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.57266235
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: dda5bd6044d5c9c4bb8eb3c903422231, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.57012939
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: dda5bd6044d5c9c4bb8eb3c903422231, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 7.00525379
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: dda5bd6044d5c9c4bb8eb3c903422231, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.12299347
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: dda5bd6044d5c9c4bb8eb3c903422231, type: 2}
@@ -1162,7 +1178,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2111410129}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dcfb0069fc502e4c9a925ebde3437d3, type: 3}
+  m_Script: {fileID: 11500000, guid: b99dc8921a4dae04e9e4db356cb77da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 737361075}
