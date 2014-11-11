@@ -14,12 +14,12 @@ public class VerticalWrap : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.gameObject.name == "bluePlayer" || other.gameObject.name == "blueCursor")
+		if(other.gameObject.name.Contains ("Player") || other.gameObject.name.Contains("Cursor"))
 		{
 			newPos.x = other.transform.position.x;
 			other.transform.position = newPos;
 		}
-		if(other.gameObject.name.Contains("blueBullet"))
+		if(other.gameObject.name.Contains("Bullet"))
 		{
 			Destroy(other.gameObject);
 		}
