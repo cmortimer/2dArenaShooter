@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterController2d : MonoBehaviour {
+public class blueController : MonoBehaviour {
 	public GameObject cursor;
 	public GameObject bullet;
 	public int speed = 6;
@@ -19,53 +19,53 @@ public class CharacterController2d : MonoBehaviour {
 	void getInput(){
 		Vector2 newPos = transform.position;
 		Vector2 cursorPos = cursor.transform.position;
-
+		
 		//Movement
-		if(Input.GetAxis("pad1LAnalogY") > 0){
+		if(Input.GetAxis("L_YAxis_1") > 0){
 			newPos.y += speed * Time.deltaTime;
 		}
 		
-		else if(Input.GetAxis("pad1LAnalogY") < 0){
+		else if(Input.GetAxis("L_YAxis_1") < 0){
 			newPos.y -= speed * Time.deltaTime;
 		}
 		
-		if(Input.GetAxis("pad1LAnalogX") < 0){
+		if(Input.GetAxis("L_XAxis_1") < 0){
 			newPos.x -= speed * Time.deltaTime;
 		}
 		
-		else if(Input.GetAxis("pad1LAnalogX") > 0){
+		else if(Input.GetAxis("L_XAxis_1") > 0){
 			newPos.x += speed * Time.deltaTime;
 		}
-
+		
 		//Cursor Position
-		if(Input.GetAxis("pad1RAnalogY") > 0){
-			cursorPos.y += cursorSpeed * Input.GetAxis("pad1RAnalogY") * Time.deltaTime;
+		if(Input.GetAxis("R_YAxis_1") > 0){
+			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_1") * Time.deltaTime;
 		}
 		
-		else if(Input.GetAxis("pad1RAnalogY") < 0){
-			cursorPos.y += cursorSpeed * Input.GetAxis("pad1RAnalogY") * Time.deltaTime;
+		else if(Input.GetAxis("R_YAxis_1") < 0){
+			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_1") * Time.deltaTime;
 		}
 		
-		if(Input.GetAxis("pad1RAnalogX") < 0){
-			cursorPos.x += cursorSpeed * Input.GetAxis("pad1RAnalogX") * Time.deltaTime;
+		if(Input.GetAxis("R_XAxis_1") < 0){
+			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_1") * Time.deltaTime;
 		}
 		
-		else if(Input.GetAxis("pad1RAnalogX") > 0){
-			cursorPos.x += cursorSpeed * Input.GetAxis("pad1RAnalogX") * Time.deltaTime;
+		else if(Input.GetAxis("R_XAxis_1") > 0){
+			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_1") * Time.deltaTime;
 		}
-
+		
 		//Teleport
-		if(Input.GetButtonDown("pad1L")){
+		if(Input.GetButtonDown("LB_1")){
 			newPos = cursorPos;
 		}
-
-
-
+		
+		
+		
 		transform.position = newPos;
 		cursor.transform.position = cursorPos;
-
-
+		
+		
 	}
-
-
+	
+	
 }

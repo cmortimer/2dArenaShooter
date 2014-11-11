@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShootBullet : MonoBehaviour {
+public class blueShoot : MonoBehaviour {
 	public GameObject bullet;
 	public GameObject cursor;
 	public GameObject player;
-
+	
 	private ArrayList bullets;
 	// Use this for initialization
 	void Start () {
@@ -17,14 +17,14 @@ public class ShootBullet : MonoBehaviour {
 		
 		
 		//Shooting
-		if(Input.GetButtonDown("pad1R")){
+		if(Input.GetButtonDown("RB_1")){
 			shootBullet();
 		}
 	}
 	
 	void shootBullet(){
 		GameObject bulletClone = Instantiate(bullet, player.transform.position, Quaternion.identity) as GameObject;
-
+		
 		bullets.Add(bulletClone);
 	}
 }

@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BulletVars.cs" />
-     <Compile Include="Assets\CharacterController2d.cs" />
      <Compile Include="Assets\HorizontalWrap.cs" />
-     <Compile Include="Assets\ShootBullet.cs" />
      <Compile Include="Assets\VerticalWrap.cs" />
+     <Compile Include="Assets\blueController.cs" />
+     <Compile Include="Assets\blueShoot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
