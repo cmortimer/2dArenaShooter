@@ -1,9 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\BulletVars.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CharacterController2d.cs">
     <Files>
-      <File FileName="Assets\BulletVars.cs" Line="12" Column="38" />
-      <File FileName="Assets\ShootBullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\HorizontalWrap.cs" Line="24" Column="30" />
+      <File FileName="Assets\VerticalWrap.cs" Line="16" Column="23" />
+      <File FileName="Assets\ShootBullet.cs" Line="26" Column="94" />
+      <File FileName="Assets\BulletVars.cs" Line="17" Column="12" />
+      <File FileName="Assets\CharacterController2d.cs" Line="25" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

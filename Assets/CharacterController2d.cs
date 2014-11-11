@@ -4,7 +4,7 @@ using System.Collections;
 public class CharacterController2d : MonoBehaviour {
 	public GameObject cursor;
 	public GameObject bullet;
-	public int speed = 5;
+	public int speed = 6;
 	public int cursorSpeed = 50;
 	// Use this for initialization
 	void Start () {
@@ -63,6 +63,8 @@ public class CharacterController2d : MonoBehaviour {
 
 		transform.position = newPos;
 		cursor.transform.position = cursorPos;
+
+
 	}
 
 

@@ -19,7 +19,10 @@ public class VerticalWrap : MonoBehaviour {
 			newPos.x = other.transform.position.x;
 			other.transform.position = newPos;
 		}
-		
+		if(other.gameObject.name.Contains("blueBullet"))
+		{
+			Destroy(other.gameObject);
+		}
 		
 	}
 }
