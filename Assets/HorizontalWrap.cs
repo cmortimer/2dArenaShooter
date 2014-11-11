@@ -19,7 +19,9 @@ public class HorizontalWrap : MonoBehaviour {
 			newPos.y = other.transform.position.y;
 			other.transform.position = newPos;
 		}
-
-		
+		if(other.gameObject.name.Contains("blueBullet"))
+		{
+			Destroy(other.gameObject);
+		}
 	}
 }
