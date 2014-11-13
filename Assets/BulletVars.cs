@@ -31,6 +31,11 @@ public class BulletVars : MonoBehaviour {
 		//	float angle = Vector2.Angle(startPos, endPos);
 			newPos = transform.position;
 			Vector2 current = endPos - startPos;
+			if(current.x == 0 && current.y == 0)
+			{
+				current.x = .01f;
+				current.y = .01f;
+			}
 			current.Normalize();
 			current *= speed;
 			newPos.x += current.x * Time.deltaTime;	

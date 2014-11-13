@@ -39,19 +39,19 @@ public class greenController : MonoBehaviour {
 		
 		//Cursor Position
 		if(Input.GetAxis("R_YAxis_3") > 0){
-			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_3") * Time.deltaTime;
+			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_3") * Time.deltaTime * .2f;
 		}
 		
 		else if(Input.GetAxis("R_YAxis_3") < 0){
-			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_3") * Time.deltaTime;
+			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_3") * Time.deltaTime * .2f;
 		}
 		
 		if(Input.GetAxis("R_XAxis_3") < 0){
-			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_3") * Time.deltaTime;
+			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_3") * Time.deltaTime * .2f;
 		}
 		
 		else if(Input.GetAxis("R_XAxis_3") > 0){
-			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_3") * Time.deltaTime;
+			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_3") * Time.deltaTime * .2f;
 		}
 		
 		//Teleport

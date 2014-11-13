@@ -451,7 +451,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 0
+  m_RootOrder: 3
 --- !u!114 &345403711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,7 +761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2515016bd6262d44085d990e11dde182, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2515016bd6262d44085d990e11dde182, type: 2}
@@ -931,7 +931,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &740252366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1040,7 @@ Transform:
   m_LocalScale: {x: 3.52233505, y: 3.52233672, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &881407289
 Prefab:
   m_ObjectHideFlags: 0
@@ -1681,7 +1681,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1490189241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1815,10 +1815,10 @@ Transform:
   m_LocalPosition: {x: .123328924, y: .0308103245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 345403710}
   - {fileID: 1774960240}
   - {fileID: 1490189240}
   - {fileID: 740252365}
+  - {fileID: 345403710}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1001 &1629660022
@@ -1941,7 +1941,7 @@ Transform:
   m_LocalScale: {x: 1.23055935, y: 24.611187, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &1774960241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,7 +2124,7 @@ Transform:
   - {fileID: 571440951}
   - {fileID: 737361078}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &2111410131
 MonoBehaviour:
   m_ObjectHideFlags: 0
