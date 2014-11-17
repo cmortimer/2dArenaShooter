@@ -4,6 +4,7 @@ using System.Collections;
 public class BulletVars : MonoBehaviour {
 	public GameObject player;
 	public GameObject cursor;
+	public GUIText text;
 
 	private Vector2 newPos;
 	public Vector2 startPos;
@@ -41,6 +42,14 @@ public class BulletVars : MonoBehaviour {
 			newPos.x += current.x * Time.deltaTime;	
 			newPos.y += current.y * Time.deltaTime;
 			transform.position = newPos;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.name.Contains ("Player") && other.name != player.name) {
+			int currentScore = int.Parse(text.text);
+			currentScore ++;
+			text.text = currentScore.ToString();
 		}
 	}
 }

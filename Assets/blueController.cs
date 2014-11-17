@@ -6,9 +6,11 @@ public class blueController : MonoBehaviour {
 	public GameObject bullet;
 	public int speed = 6;
 	public int cursorSpeed = 50;
+	public Vector2 startPos;
 	// Use this for initialization
 	void Start () {
 		cursor.transform.position = transform.position;
+		startPos = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -65,6 +67,12 @@ public class blueController : MonoBehaviour {
 		cursor.transform.position = cursorPos;
 		
 		
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.name.Contains ("Bullet") && !other.name.Contains("blueBullet")) {
+			transform.position = startPos;
+		}
 	}
 	
 	
