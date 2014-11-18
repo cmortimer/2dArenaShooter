@@ -71,7 +71,7 @@ public class yellowController : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.name.Contains ("Bullet") && !other.name.Contains("yellowBullet")) {
-			transform.position = startPos;
+			//transform.position = startPos;
 		}
 	}
 }

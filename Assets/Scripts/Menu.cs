@@ -29,7 +29,7 @@ public class Menu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("LB_1")) {
+		if (Input.GetButtonDown("Start_1") || Input.GetButtonDown("Start_2") || Input.GetButtonDown("Start_3") || Input.GetButtonDown("Start_4")) {
 			menuOpen = !menuOpen;
 			UpdateCursorLock();
 		} 

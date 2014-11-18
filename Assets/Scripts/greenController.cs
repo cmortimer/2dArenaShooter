@@ -71,7 +71,7 @@ public class greenController : MonoBehaviour {
 	
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.name.Contains ("Bullet") && !other.name.Contains("greenBullet")) {
-			transform.position = startPos;
+			//transform.position = startPos;
 		}
 	}
 }
