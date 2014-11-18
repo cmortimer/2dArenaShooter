@@ -39,24 +39,25 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>E:/Unity/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>E:/Unity/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BulletVars.cs" />
-     <Compile Include="Assets\HorizontalWrap.cs" />
-     <Compile Include="Assets\VerticalWrap.cs" />
-     <Compile Include="Assets\blueController.cs" />
-     <Compile Include="Assets\blueShoot.cs" />
-     <Compile Include="Assets\greenController.cs" />
-     <Compile Include="Assets\greenShoot.cs" />
-     <Compile Include="Assets\redController.cs" />
-     <Compile Include="Assets\redShoot.cs" />
-     <Compile Include="Assets\yellowController.cs" />
-     <Compile Include="Assets\yellowShoot.cs" />
+     <Compile Include="Assets\Scripts\BulletVars.cs" />
+     <Compile Include="Assets\Scripts\HorizontalWrap.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\VerticalWrap.cs" />
+     <Compile Include="Assets\Scripts\blueController.cs" />
+     <Compile Include="Assets\Scripts\blueShoot.cs" />
+     <Compile Include="Assets\Scripts\greenController.cs" />
+     <Compile Include="Assets\Scripts\greenShoot.cs" />
+     <Compile Include="Assets\Scripts\redController.cs" />
+     <Compile Include="Assets\Scripts\redShoot.cs" />
+     <Compile Include="Assets\Scripts\yellowController.cs" />
+     <Compile Include="Assets\Scripts\yellowShoot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

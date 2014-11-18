@@ -23,7 +23,9 @@ public class greenShoot : MonoBehaviour {
 	}
 	
 	void shootBullet(){
-				GameObject bulletClone = Instantiate (bullet, player.transform.position, Quaternion.identity) as GameObject;
+		GameObject bulletClone = Instantiate (bullet, player.transform.position, Quaternion.identity) as GameObject;
+
+		bullets.Add(bulletClone);
 	}
 
 }
