@@ -7,6 +7,8 @@ public class blueController : MonoBehaviour {
 	public int speed = 6;
 	public int cursorSpeed = 50;
 	public Vector2 startPos;
+
+	public Menu menu;
 	// Use this for initialization
 	void Start () {
 		cursor.transform.position = transform.position;
@@ -21,52 +23,51 @@ public class blueController : MonoBehaviour {
 	void getInput(){
 		Vector2 newPos = transform.position;
 		Vector2 cursorPos = cursor.transform.position;
-		
-		//Movement
-		if(Input.GetAxis("L_YAxis_1") > 0){
-			newPos.y += speed * Time.deltaTime;
+
+		if (!menu.menuOpen) {
+			//Movement
+			if(Input.GetAxis("L_YAxis_1") > 0){
+				newPos.y += speed * Time.deltaTime;
+			}
+			
+			else if(Input.GetAxis("L_YAxis_1") < 0){
+				newPos.y -= speed * Time.deltaTime;
+			}
+			
+			if(Input.GetAxis("L_XAxis_1") < 0){
+				newPos.x -= speed * Time.deltaTime;
+			}
+			
+			else if(Input.GetAxis("L_XAxis_1") > 0){
+				newPos.x += speed * Time.deltaTime;
+			}
+			
+			//Cursor Position
+			if(Input.GetAxis("R_YAxis_1") > 0){
+				cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_1") * Time.deltaTime;
+			}
+			
+			else if(Input.GetAxis("R_YAxis_1") < 0){
+				cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_1") * Time.deltaTime;
+			}
+			
+			if(Input.GetAxis("R_XAxis_1") < 0){
+				cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_1") * Time.deltaTime;
+			}
+			
+			else if(Input.GetAxis("R_XAxis_1") > 0){
+				cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_1") * Time.deltaTime;
+			}
+			
+			//Teleport
+			if(Input.GetButtonDown("LB_1")){
+				newPos = cursorPos;
+			}
+			
+			transform.position = newPos;
+			cursor.transform.position = cursorPos;
 		}
-		
-		else if(Input.GetAxis("L_YAxis_1") < 0){
-			newPos.y -= speed * Time.deltaTime;
-		}
-		
-		if(Input.GetAxis("L_XAxis_1") < 0){
-			newPos.x -= speed * Time.deltaTime;
-		}
-		
-		else if(Input.GetAxis("L_XAxis_1") > 0){
-			newPos.x += speed * Time.deltaTime;
-		}
-		
-		//Cursor Position
-		if(Input.GetAxis("R_YAxis_1") > 0){
-			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_1") * Time.deltaTime;
-		}
-		
-		else if(Input.GetAxis("R_YAxis_1") < 0){
-			cursorPos.y += cursorSpeed * Input.GetAxis("R_YAxis_1") * Time.deltaTime;
-		}
-		
-		if(Input.GetAxis("R_XAxis_1") < 0){
-			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_1") * Time.deltaTime;
-		}
-		
-		else if(Input.GetAxis("R_XAxis_1") > 0){
-			cursorPos.x += cursorSpeed * Input.GetAxis("R_XAxis_1") * Time.deltaTime;
-		}
-		
-		//Teleport
-		if(Input.GetButtonDown("LB_1")){
-			newPos = cursorPos;
-		}
-		
-		
-		
-		transform.position = newPos;
-		cursor.transform.position = cursorPos;
-		
-		
+			
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
