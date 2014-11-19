@@ -23,5 +23,9 @@ public class HorizontalWrap : MonoBehaviour {
 		{
 			Destroy(other.gameObject);
 		}
+		if(other.gameObject.name.Contains("bumper"))
+		{
+			Destroy(other.gameObject);
+		}
 	}
 }

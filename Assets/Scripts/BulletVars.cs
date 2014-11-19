@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class BulletVars : MonoBehaviour {
-	public GameObject player;
+	public GameObject player; 
 	public GameObject cursor;
 	public GUIText text;
 
