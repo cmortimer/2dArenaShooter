@@ -50,6 +50,12 @@ public class BulletVars : MonoBehaviour {
 			int currentScore = int.Parse(text.text);
 			currentScore ++;
 			text.text = currentScore.ToString();
+			Destroy(this.gameObject);
+		}
+		if(other.name.Contains("Bumper")){
+			int currentScore = int.Parse(text.text);
+			currentScore--;
+			text.text = currentScore.ToString();
 		}
 	}
 }

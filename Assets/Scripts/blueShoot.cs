@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class blueShoot : MonoBehaviour {
 	public GameObject bullet;
 	public GameObject cursor;
 	public GameObject player;
 	public GameObject bumper;
-	public GameObject worldBorder;
-	public bool isBumper;
+
 	public float lastPress;
 	public float timer;
 	
@@ -16,10 +14,8 @@ public class blueShoot : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		bullets = new ArrayList();
-		isBumper = true;
 		lastPress = 0.0f;
 		timer = 0.0f;
-		worldBorder.transform.position = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -32,9 +28,8 @@ public class blueShoot : MonoBehaviour {
 		}
 
 
-		if(Input.GetButtonDown("B_1") && isBumper){
+		if(Input.GetButtonDown("B_1") && ((timer - lastPress) > 3.0f)){
 
-			isBumper = false;
 			lastPress = timer;
 			createBumper();
 		}
@@ -52,15 +47,6 @@ public class blueShoot : MonoBehaviour {
 
 		Vector3 scaleVec = new Vector3(1.4f, 1.4f, 1);
 		bumperClone.transform.localScale = scaleVec;
-
-		if((timer - lastPress) > 2.0f)
-		{
-			bumperClone.transform.position = worldBorder.transform.position;
-			isBumper=true;
-			timer = 0.0f;
-			lastPress = 0.0f;
-			
-		}
 
 	}
 }

@@ -611,7 +611,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 394744287}
   - 212: {fileID: 394744288}
-  - 50: {fileID: 394744290}
   - 61: {fileID: 394744289}
   - 114: {fileID: 394744291}
   m_Layer: 0
@@ -628,11 +627,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394744286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 100, z: 0}
+  m_LocalPosition: {x: 105.379997, y: 96.4199982, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275976795}
-  m_RootOrder: 0
+  m_Father: {fileID: 2035622611}
+  m_RootOrder: 4
 --- !u!212 &394744288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -666,21 +665,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!50 &394744290
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 394744286}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!114 &394744291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,7 +867,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2515016bd6262d44085d990e11dde182, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.16576409
+      value: 1.18350947
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2515016bd6262d44085d990e11dde182, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1184,6 +1168,8 @@ MonoBehaviour:
   cursor: {fileID: 901307250}
   player: {fileID: 962982099}
   bumper: {fileID: 964031048}
+  lastPress: 0
+  timer: 0
 --- !u!1 &831694680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,7 +1216,7 @@ Transform:
   m_PrefabInternal: {fileID: 727057035}
   m_GameObject: {fileID: 831694680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .304721415, y: 1.16576409, z: 0}
+  m_LocalPosition: {x: .304721415, y: 1.18350947, z: 0}
   m_LocalScale: {x: 3.52233505, y: 3.52233672, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1533,7 +1519,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 964031050}
   - 212: {fileID: 964031049}
-  - 50: {fileID: 964031052}
   - 61: {fileID: 964031051}
   - 114: {fileID: 964031053}
   m_Layer: 0
@@ -1588,21 +1573,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!50 &964031052
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 964031048}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!114 &964031053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,7 +1690,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1192851077}
   - 212: {fileID: 1192851078}
-  - 50: {fileID: 1192851080}
   - 61: {fileID: 1192851079}
   - 114: {fileID: 1192851081}
   m_Layer: 0
@@ -1775,21 +1744,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!50 &1192851080
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1192851076}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!114 &1192851081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,7 +1765,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1213709270}
   - 212: {fileID: 1213709271}
-  - 50: {fileID: 1213709273}
   - 61: {fileID: 1213709272}
   - 114: {fileID: 1213709274}
   m_Layer: 0
@@ -1866,21 +1819,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!50 &1213709273
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1213709269}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
 --- !u!114 &1213709274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1997,8 +1935,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.38000011, y: -3.57999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 394744287}
+  m_Children: []
   m_Father: {fileID: 2035622611}
   m_RootOrder: 3
 --- !u!1 &1305045206
@@ -2049,6 +1986,8 @@ MonoBehaviour:
   cursor: {fileID: 10322515}
   player: {fileID: 2012754353}
   bumper: {fileID: 1213709269}
+  lastPress: 0
+  timer: 0
 --- !u!1 &1324760158
 GameObject:
   m_ObjectHideFlags: 0
@@ -2711,6 +2650,8 @@ MonoBehaviour:
   cursor: {fileID: 603952833}
   player: {fileID: 3379974}
   bumper: {fileID: 394744286}
+  lastPress: 0
+  timer: 0
 --- !u!4 &2035622611
 Transform:
   m_ObjectHideFlags: 0
@@ -2725,6 +2666,7 @@ Transform:
   - {fileID: 603952834}
   - {fileID: 1086365617}
   - {fileID: 1275976795}
+  - {fileID: 394744287}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &2111410129
@@ -2776,7 +2718,5 @@ MonoBehaviour:
   cursor: {fileID: 156698278}
   player: {fileID: 571440946}
   bumper: {fileID: 1192851076}
-  worldBorder: {fileID: 1568689484}
-  isBumper: 0
   lastPress: 0
   timer: 0
