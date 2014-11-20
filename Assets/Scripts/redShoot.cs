@@ -11,9 +11,12 @@ public class redShoot : MonoBehaviour {
 	public float timer;
 	
 	private ArrayList bullets;
+	private ArrayList bumpers;
 	// Use this for initialization
 	void Start () {
 		bullets = new ArrayList();
+		bumpers = new ArrayList();
+
 		lastPress = 0.0f;
 		timer = 0.0f;
 	}
@@ -23,7 +26,7 @@ public class redShoot : MonoBehaviour {
 		
 		timer += Time.deltaTime;
 		//Shooting
-		if(Input.GetButtonDown("RB_2")){
+		if(Input.GetButtonDown("A_2")){
 			shootBullet();
 		}
 
@@ -40,9 +43,13 @@ public class redShoot : MonoBehaviour {
 		bullets.Add(bulletClone);
 	}
 	void createBumper(){
-		GameObject bumperClone = Instantiate(bumper, player.transform.position, Quaternion.identity) as GameObject;
-		
-		Vector3 scaleVec = new Vector3(1.4f, 1.4f, 1);
-		bumperClone.transform.localScale = scaleVec;
+		if (bumpers.Count <= 5) {
+			GameObject bumperClone = Instantiate(bumper, player.transform.position, Quaternion.identity) as GameObject;
+			
+			Vector3 scaleVec = new Vector3(1.4f, 1.4f, 1);
+			bumperClone.transform.localScale = scaleVec;
+			
+			bumpers.Add(bumperClone);
+		}
 	}
 }

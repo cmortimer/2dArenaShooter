@@ -96,24 +96,28 @@ public class Menu : MonoBehaviour {
 	}
 
 	void drawHUD() {
-		GUI.Toggle(new Rect(buttonX,menuTop + 1 * buttonDist, buttonWidth, buttonHeight), oneSelected, "Resume" ,"Button");
-		GUI.Toggle(new Rect(buttonX, menuTop + 2 * buttonDist, buttonWidth, buttonHeight), twoSelected, "Restart" ,"Button");
-		GUI.Toggle(new Rect(buttonX, menuTop + 3 * buttonDist, buttonWidth, buttonHeight), threeSelected, "Quit" ,"Button");
+		if (menuOpen) {
+			GUI.Toggle(new Rect(buttonX,menuTop + 1 * buttonDist, buttonWidth, buttonHeight), oneSelected, "Resume" ,"Button");
+			GUI.Toggle(new Rect(buttonX, menuTop + 2 * buttonDist, buttonWidth, buttonHeight), twoSelected, "Restart" ,"Button");
+			GUI.Toggle(new Rect(buttonX, menuTop + 3 * buttonDist, buttonWidth, buttonHeight), threeSelected, "Quit" ,"Button");
+		}
 	}
 
 	void menuSelect() {
-		// Start / Resume
-		if (oneSelected) {
-			menuOpen = false;
-			UpdateCursorLock();
-		}
-		// Restart
-		if (twoSelected) {
-			Application.LoadLevel(Application.loadedLevel);
-		}
-		// Quit (Only works in the Build. Does not work in the eidtor!)
-		if (threeSelected) {
-			Application.Quit();
+		if (menuOpen) {
+			// Start / Resume
+			if (oneSelected) {
+				menuOpen = false;
+				UpdateCursorLock();
+			}
+			// Restart
+			if (twoSelected) {
+				Application.LoadLevel(Application.loadedLevel);
+			}
+			// Quit (Only works in the Build. Does not work in the eidtor!)
+			if (threeSelected) {
+				Application.Quit();
+			}
 		}
 	}
 	

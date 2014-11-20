@@ -49,6 +49,10 @@ public class BulletVars : MonoBehaviour {
 		if (other.name.Contains ("Player") && other.name != player.name) {
 			int currentScore = int.Parse(text.text);
 			currentScore ++;
+			if(currentScore >=100)
+			{
+				//Insert win screen code here
+			}
 			text.text = currentScore.ToString();
 			Destroy(this.gameObject);
 		}
@@ -56,6 +60,8 @@ public class BulletVars : MonoBehaviour {
 			int currentScore = int.Parse(text.text);
 			currentScore--;
 			text.text = currentScore.ToString();
+			//Destroy(this.gameObject);
+
 		}
 	}
 }

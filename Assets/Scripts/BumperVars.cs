@@ -4,7 +4,7 @@ using System.Collections;
 public class BumperVars : MonoBehaviour {
 
 	public GameObject bumper;
-	float count;
+	public int count;
 
 //	float scale;
 	// Use this for initialization
@@ -22,10 +22,10 @@ public class BumperVars : MonoBehaviour {
 		if (other.name.Contains ("Bullet")) {
 			Destroy(other.gameObject); //Should destroy the bullet upon contact
 			count++;
-			if(count ==5) //Bumper dies after 5 hits
+			if(count >= 5) //Bumper dies after 5 hits
 			{
-				Destroy(this.gameObject);
 				count = 0;
+				Destroy(this.gameObject);
 			}
 		}
 	}

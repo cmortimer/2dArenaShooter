@@ -59,7 +59,7 @@ public class redController : MonoBehaviour {
 			}
 			
 			//Teleport
-			if(Input.GetButtonDown("LB_2")){
+			if(Input.GetButtonDown("X_2")){
 				newPos = cursorPos;
 			}
 
