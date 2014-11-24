@@ -18,6 +18,7 @@ public class redController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		getInput();
+		followCursor();
 	}
 	
 	void getInput(){
@@ -66,6 +67,17 @@ public class redController : MonoBehaviour {
 			transform.position = newPos;
 			cursor.transform.position = cursorPos;
 		}
+		
+		
+	}
+
+	void followCursor()
+	{
+		
+		Vector3 vectorToTarget = cursor.transform.position - transform.position;
+		float angle = Mathf.Atan2(vectorToTarget.y, vectorToTarget.x) * Mathf.Rad2Deg;
+		Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+		transform.rotation = Quaternion.Slerp(transform.rotation, q, 1000);
 		
 		
 	}
