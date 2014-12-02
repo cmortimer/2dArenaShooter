@@ -16,7 +16,6 @@ public class StartScreen : MonoBehaviour {
 		redReady = false;
 		greenReady = false;
 		yellowReady = false;
-		loadedPlayers = false;
 	}
 	
 	// Update is called once per frame
@@ -42,24 +41,26 @@ public class StartScreen : MonoBehaviour {
 			if(Input.GetButtonDown("Start_1") && blueReady)
 				Application.LoadLevel("Scene1");
 		}
-		else if(Application.loadedLevelName == "Scene1" && !loadedPlayers){
-			if(!blueReady){
-				GameObject bluePlayer = GameObject.Find("blueShip");
-				Destroy(bluePlayer.gameObject);
-			}
-			if(!redReady){
-				GameObject redPlayer = GameObject.Find("redShip");
-				Destroy(redPlayer.gameObject);
-			}
-			if(!greenReady){
-				GameObject greenPlayer = GameObject.Find("greenShip");
-				Destroy(greenPlayer.gameObject);
-			}
-			if(!yellowReady){
-				GameObject yellowPlayer = GameObject.Find("yellowShip");
-				Destroy(yellowPlayer.gameObject);
-			}
-			loadedPlayers = true;
+	}
+
+	void OnLevelWasLoaded(){
+		if(!blueReady){
+			GameObject bluePlayer = GameObject.Find("blueShip");
+			Destroy(bluePlayer.gameObject);
 		}
+		if(!redReady){
+			GameObject redPlayer = GameObject.Find("redShip");
+			Destroy(redPlayer.gameObject);
+		}
+		if(!greenReady){
+			GameObject greenPlayer = GameObject.Find("greenShip");
+			Destroy(greenPlayer.gameObject);
+		}
+		if(!yellowReady){
+			GameObject yellowPlayer = GameObject.Find("yellowShip");
+			Destroy(yellowPlayer.gameObject);
+		}
+		loadedPlayers = true;
+
 	}
 }

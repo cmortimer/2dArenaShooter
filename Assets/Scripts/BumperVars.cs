@@ -10,7 +10,8 @@ public class BumperVars : MonoBehaviour {
 	void Start () {
 		bumper.transform.position = transform.position;
 		//scale = 20.2f;
-		Destroy(this.gameObject, 5);
+		if(gameObject.name.Contains("Clone"))
+			Destroy(this.gameObject, 5);
 	}
 
 	void OnDestroy(){
