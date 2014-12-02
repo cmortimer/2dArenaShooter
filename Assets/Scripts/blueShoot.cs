@@ -26,11 +26,11 @@ public class blueShoot : MonoBehaviour {
 		
 		timer += Time.deltaTime;
 		//Shooting
-		if(Input.GetButtonDown("A_1")){
+		if(Input.GetButtonDown("RB_1")){
 			shootBullet();
 		}
 
-		if(Input.GetButtonDown("B_1") && ((timer - lastPress) > 3.0f)){
+		if(Input.GetButtonDown("B_1") && ((timer - lastPress) > 1.0f)){
 
 			lastPress = timer;
 			createBumper();

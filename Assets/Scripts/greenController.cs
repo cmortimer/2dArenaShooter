@@ -61,7 +61,7 @@ public class greenController : MonoBehaviour {
 			}
 			
 			//Teleport
-			if(Input.GetButtonDown("X_3")){
+			if(Input.GetButtonDown("LB_3")){
 				newPos = cursorPos;
 			}
 

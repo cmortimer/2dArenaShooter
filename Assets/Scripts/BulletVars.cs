@@ -60,7 +60,7 @@ public class BulletVars : MonoBehaviour {
 			int currentScore = int.Parse(text.text);
 			currentScore--;
 			text.text = currentScore.ToString();
-			//Destroy(this.gameObject);
+			Destroy(this.gameObject);
 
 		}
 	}

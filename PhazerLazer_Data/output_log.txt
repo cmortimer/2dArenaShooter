@@ -1,0 +1,22 @@
+Initialize engine version: 4.5.1f3 (73cd57f80e3e)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 480 (ID=0x6c0)
+    Vendor:   NVIDIA
+    VRAM:     1483 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\2dArenaShooter\PhazerLazer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\2dArenaShooter\PhazerLazer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\2dArenaShooter\PhazerLazer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\2dArenaShooter\PhazerLazer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.050 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.221073 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.517296 ms (FindLiveObjects: 0.011309 ms CreateObjectMapping: 0.010579 ms MarkObjects: 0.055815 ms  DeleteObjects: 0.017875 ms)
+

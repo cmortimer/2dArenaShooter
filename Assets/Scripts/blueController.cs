@@ -61,7 +61,7 @@ public class blueController : MonoBehaviour {
 			}
 			
 			//Teleport
-			if(Input.GetButtonDown("X_1")){
+			if(Input.GetButtonDown("LB_1")){
 				newPos = cursorPos;
 			}
 			
