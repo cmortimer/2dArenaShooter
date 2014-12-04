@@ -455,6 +455,7 @@ GameObject:
   - 212: {fileID: 345403709}
   - 61: {fileID: 345403708}
   - 114: {fileID: 345403711}
+  - 50: {fileID: 345403712}
   m_Layer: 0
   m_Name: worldBorderD
   m_TagString: Untagged
@@ -508,7 +509,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 2
+  m_RootOrder: 0
 --- !u!114 &345403711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,6 +523,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oppositeBorder: {fileID: 1490189237}
   newPos: {x: 0, y: 0}
+--- !u!50 &345403712
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 345403707}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &345596222
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +713,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumper: {fileID: 394744286}
-  count: 0
 --- !u!1 &571440946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,6 +1053,7 @@ GameObject:
   - 212: {fileID: 740252364}
   - 61: {fileID: 740252363}
   - 114: {fileID: 740252366}
+  - 50: {fileID: 740252367}
   m_Layer: 0
   m_Name: worldBorderL
   m_TagString: Untagged
@@ -1091,7 +1107,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!114 &740252366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,6 +1121,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oppositeBorder: {fileID: 1774960237}
   newPos: {x: 0, y: 0}
+--- !u!50 &740252367
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 740252362}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &754893337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,7 +1665,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumper: {fileID: 964031048}
-  count: 0
 --- !u!1 &1086365616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumper: {fileID: 1192851076}
-  count: 0
 --- !u!1 &1213709269
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,7 +1943,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bumper: {fileID: 1213709269}
-  count: 0
 --- !u!1001 &1267623933
 Prefab:
   m_ObjectHideFlags: 0
@@ -2283,6 +2311,7 @@ GameObject:
   - 212: {fileID: 1490189239}
   - 61: {fileID: 1490189238}
   - 114: {fileID: 1490189241}
+  - 50: {fileID: 1490189242}
   m_Layer: 0
   m_Name: worldBorderU
   m_TagString: Untagged
@@ -2336,7 +2365,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!114 &1490189241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2350,6 +2379,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oppositeBorder: {fileID: 345403707}
   newPos: {x: 0, y: 0}
+--- !u!50 &1490189242
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490189237}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &1531311484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,10 +2515,10 @@ Transform:
   m_LocalPosition: {x: .123328924, y: .0308103245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1490189240}
-  - {fileID: 740252365}
   - {fileID: 345403710}
   - {fileID: 1774960240}
+  - {fileID: 1490189240}
+  - {fileID: 740252365}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!1001 &1629660022
@@ -2548,6 +2592,7 @@ GameObject:
   - 212: {fileID: 1774960239}
   - 61: {fileID: 1774960238}
   - 114: {fileID: 1774960241}
+  - 50: {fileID: 1774960242}
   m_Layer: 0
   m_Name: worldBorderR
   m_TagString: Untagged
@@ -2601,7 +2646,7 @@ Transform:
   m_LocalScale: {x: 1.23055935, y: 24.611187, z: 1}
   m_Children: []
   m_Father: {fileID: 1568689485}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &1774960241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2615,6 +2660,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oppositeBorder: {fileID: 740252362}
   newPos: {x: 0, y: 0}
+--- !u!50 &1774960242
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774960237}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &2012754353
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,11 +18,13 @@ public class BlueCover : MonoBehaviour {
 	{
 		if(blueCover.blueReady)
 		{
-			transform.position = banner.transform.position;
+			transform.position = new Vector3(-7.13f,-3.93f,0.0f);
+			banner.transform.position = new Vector3(30,0,0);
 		}
 		else
 		{
 			transform.position = new Vector3(30.0f,0.0f,0.0f);
+			banner.transform.position = new Vector3(-7.16f,-3.93f,0.0f);
 		}
 	}
 }

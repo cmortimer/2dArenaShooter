@@ -18,11 +18,13 @@ public class RedCover : MonoBehaviour {
 	{
 		if(redCover.redReady)
 		{
-			transform.position = banner.transform.position;
+			transform.position = new Vector3(-3.54f,-3.93f,0.0f);
+			banner.transform.position = new Vector3(30,0,0);
 		}
 		else
 		{
 			transform.position = new Vector3(30.0f,0.0f,0.0f);
+			banner.transform.position = new Vector3(-3.54f,-3.93f,0.0f);
 		}
 	}
 }

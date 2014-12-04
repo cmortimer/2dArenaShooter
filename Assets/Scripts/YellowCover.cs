@@ -18,11 +18,13 @@ public class YellowCover : MonoBehaviour {
 	{
 		if(yellowCover.yellowReady)
 		{
-			transform.position = banner.transform.position;
+			transform.position = new Vector3(7.30f,-3.93f,0.0f);
+			banner.transform.position = new Vector3(30,0,0);
 		}
 		else
 		{
 			transform.position = new Vector3(30.0f,0.0f,0.0f);
+			banner.transform.position = new Vector3(7.30f,-3.93f,0.0f);
 		}
 	}
 }
