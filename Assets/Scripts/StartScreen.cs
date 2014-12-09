@@ -46,19 +46,23 @@ public class StartScreen : MonoBehaviour {
 	void OnLevelWasLoaded(){
 		if(!blueReady){
 			GameObject bluePlayer = GameObject.Find("blueShip");
-			Destroy(bluePlayer.gameObject);
+			//Destroy(bluePlayer.gameObject);
+			bluePlayer.SetActive(false);
 		}
 		if(!redReady){
 			GameObject redPlayer = GameObject.Find("redShip");
-			Destroy(redPlayer.gameObject);
+			//Destroy(redPlayer.gameObject);
+			redPlayer.SetActive(false);
 		}
 		if(!greenReady){
 			GameObject greenPlayer = GameObject.Find("greenShip");
-			Destroy(greenPlayer.gameObject);
+			//Destroy(greenPlayer.gameObject);
+			greenPlayer.SetActive(false);
 		}
 		if(!yellowReady){
 			GameObject yellowPlayer = GameObject.Find("yellowShip");
-			Destroy(yellowPlayer.gameObject);
+			//Destroy(yellowPlayer.gameObject);
+			yellowPlayer.SetActive(false);
 		}
 		loadedPlayers = true;
 

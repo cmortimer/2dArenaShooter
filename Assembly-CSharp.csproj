@@ -54,7 +54,9 @@
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\RedCover.cs" />
      <Compile Include="Assets\Scripts\StartScreen.cs" />
+     <Compile Include="Assets\Scripts\Title.cs" />
      <Compile Include="Assets\Scripts\VerticalWrap.cs" />
+     <Compile Include="Assets\Scripts\WinInput.cs" />
      <Compile Include="Assets\Scripts\YellowCover.cs" />
      <Compile Include="Assets\Scripts\blueController.cs" />
      <Compile Include="Assets\Scripts\blueShoot.cs" />

@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\StartScreen.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WinInput.cs">
     <Files>
-      <File FileName="Assets\Scripts\StartScreen.cs" Line="22" Column="18" />
+      <File FileName="Assets\Scripts\WinInput.cs" Line="20" Column="24" />
+      <File FileName="Assets\Scripts\StartScreen.cs" Line="71" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
