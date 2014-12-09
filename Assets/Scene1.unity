@@ -1022,6 +1022,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 571440946}
   cursor: {fileID: 156698278}
+  blueWin: {fileID: 0}
+  redWin: {fileID: 0}
+  greenWin: {fileID: 0}
+  yellowWin: {fileID: 0}
   text: {fileID: 18912302}
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
@@ -1709,6 +1713,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 3379974}
   cursor: {fileID: 603952833}
+  blueWin: {fileID: 0}
+  redWin: {fileID: 0}
+  greenWin: {fileID: 0}
+  yellowWin: {fileID: 0}
   text: {fileID: 1275976794}
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
@@ -2270,6 +2278,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2012754353}
   cursor: {fileID: 10322515}
+  blueWin: {fileID: 0}
+  redWin: {fileID: 0}
+  greenWin: {fileID: 0}
+  yellowWin: {fileID: 0}
   text: {fileID: 1324760159}
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}
@@ -2464,6 +2476,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 962982099}
   cursor: {fileID: 901307250}
+  blueWin: {fileID: 0}
+  redWin: {fileID: 0}
+  greenWin: {fileID: 0}
+  yellowWin: {fileID: 0}
   text: {fileID: 923990160}
   startPos: {x: 0, y: 0}
   endPos: {x: 0, y: 0}

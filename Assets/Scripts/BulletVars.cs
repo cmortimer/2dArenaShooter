@@ -4,6 +4,11 @@ using System.Collections;
 public class BulletVars : MonoBehaviour {
 	public GameObject player; 
 	public GameObject cursor;
+	public GameObject blueWin;
+	public GameObject redWin;
+	public GameObject greenWin;
+	public GameObject yellowWin;
+
 	public GUIText text;
 
 	private Vector2 newPos;
@@ -48,11 +53,8 @@ public class BulletVars : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.name.Contains ("Player") && other.name != player.name) {
 			int currentScore = int.Parse(text.text);
-			currentScore ++;
-			if(currentScore >=100)
-			{
-				//Insert win screen code here
-			}
+			currentScore++;
+
 			text.text = currentScore.ToString();
 			Destroy(this.gameObject);
 		}
